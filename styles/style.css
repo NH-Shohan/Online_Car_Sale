@@ -1,0 +1,168 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+
+.container {
+  height: calc(100vh - 70px);
+  position: relative;
+  text-align: center;
+  color: var(--black);
+}
+
+:root {
+  --primary: #7579e7;
+  --secondary: #9ab3f5;
+  --background: #263238;
+  --white: #f7f7f7;
+  --black: #101010;
+}
+
+/* **********rgb(180, 182, 252)
+/* Navbar section */
+/* ************** */
+
+.navbar {
+  padding-inline: 10%;
+  height: 70px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 160px;
+  height: auto;
+}
+
+.nav_list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.nav_list li a {
+  text-decoration: none;
+  color: var(--white);
+  position: relative;
+}
+
+.nav_list li a:hover {
+  color: var(--primary);
+}
+
+.nav_list li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav_list li a:hover::after {
+  transform: scaleX(1);
+}
+.nav_list li a.active {
+  color: var(--primary);
+}
+.nav_list li a.active::after {
+  transform: scaleX(1);
+}
+
+/* ************ */
+/* Home Section */
+/* ************ */
+
+.container h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  color: var(--primary);
+  padding-top: 4%;
+  z-index: 100;
+}
+.container p {
+  color: var(--black);
+  padding-inline: 25%;
+  z-index: 100;
+}
+.car_image {
+  position: absolute;
+  width: 70vw;
+  left: 17%;
+  bottom: 30px;
+  z-index: 0;
+}
+.home_container {
+  position: relative;
+  overflow: hidden;
+  padding-inline: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.home_container img {
+  position: absolute;
+  right: -25vw;
+  bottom: -20vh;
+  width: 70vw;
+}
+
+.details_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+.details:nth-child(even) {
+  transform: translateY(20px);
+}
+.details {
+  border: 2px solid var(--primary);
+  border-radius: 15px 0 15px 0;
+  padding: 7px;
+  cursor: pointer;
+}
+.details h3 {
+  color: var(--primary);
+  font-weight: 400;
+}
+.details:hover {
+  background-color: var(--secondary);
+  transition: all 250ms;
+}
+.details:hover h3 {
+  color: var(--black);
+}
+.details p {
+  padding: 0;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* ************** */
+/* Footer Section */
+/* ************** */
+
+.footer {
+  color: var(--black);
+  color: var(--white);
+  font-weight: 500;
+  padding-block: 20px;
+  padding-inline: 10%;
+  background-color: var(--primary);
+  text-align: center;
+}

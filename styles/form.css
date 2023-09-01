@@ -1,0 +1,60 @@
+:root {
+  --primary: #7579e7;
+  --secondary: #9ab3f5;
+  --background: #263238;
+  --white: #f7f7f7;
+  --black: #101010;
+}
+
+.container {
+  padding-inline: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.registration_image {
+  width: 35vw;
+}
+
+fieldset {
+  border: 2px solid var(--primary);
+  padding: 25px;
+  border-radius: 30px 0 30px 0;
+  text-align: left;
+  width: 35vw;
+  margin: auto;
+}
+legend {
+  padding-inline: 5px;
+  font-size: 30px;
+  color: var(--primary);
+  margin-bottom: -15px;
+}
+label {
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 5px 7px;
+  margin-bottom: 7px;
+  border: 2px solid var(--secondary);
+  outline: none;
+  border-radius: 10px 0 10px 0;
+  background-color: #e1e2ff;
+}
+button {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  margin-top: 7px;
+  border-radius: 10px 0 10px 0;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--black);
+  font-weight: 600;
+}

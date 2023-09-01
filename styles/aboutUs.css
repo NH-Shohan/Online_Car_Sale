@@ -1,0 +1,72 @@
+:root {
+  --primary: #7579e7;
+  --secondary: #9ab3f5;
+  --background: #263238;
+  --white: #f7f7f7;
+  --black: #101010;
+}
+
+.container {
+  text-align: left;
+  padding-inline: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.container img {
+  width: 40vw;
+}
+.container h1 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.container p {
+  padding-inline: 0%;
+}
+
+.contact_container,
+.team_container {
+  color: var(--black);
+  text-align: center;
+}
+.contact_container h3,
+.team_container h3 {
+  color: var(--primary);
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.contact,
+.team {
+  padding-inline: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-block: 20px;
+}
+.address {
+  border: 2px solid var(--secondary);
+  font-size: 20px;
+  padding: 35px;
+  border-radius: 20px 0 20px 0;
+  cursor: pointer;
+}
+.address:hover {
+  border: 2px solid var(--primary);
+  background-color: var(--secondary);
+  transition: all 250ms;
+}
+
+.team {
+  grid-template-columns: repeat(4, 1fr);
+}
+.member {
+  border: 2px solid var(--secondary);
+  border-radius: 20px 0 20px 0;
+}
+.member img {
+  width: 100%;
+  border-radius: 18px 0 0 0;
+}
+.member p{
+  padding-bottom: 10px;
+}
