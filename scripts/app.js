@@ -75,6 +75,7 @@ const carList = document.getElementById("carList");
 function createCarCards() {
   carsDatabase.forEach((car) => {
     const card = document.createElement("div");
+    
     const imageItem = document.createElement("img");
     const modelItem = document.createElement("h3");
     const locationItem = document.createElement("p");
@@ -97,12 +98,15 @@ function searchCars() {
   const locationInput = document.getElementById("location").value.toLowerCase();
 
   carList.innerHTML = "";
+  let hasCar = false;
 
   carsDatabase.forEach((car) => {
     const model = car.model.toLowerCase();
     const location = car.location.toLowerCase();
 
     if (model.includes(modelInput) && location.includes(locationInput)) {
+      hasCar = true;
+
       const card = document.createElement("div");
       const imageItem = document.createElement("img");
       const modelItem = document.createElement("h3");
@@ -120,6 +124,9 @@ function searchCars() {
       carList.appendChild(card);
     }
   });
+
+  const noCarMessage = document.getElementById("noCarMessage");
+  noCarMessage.textContent = hasCar ? "" : "Coming soon";
 }
 
 createCarCards();
