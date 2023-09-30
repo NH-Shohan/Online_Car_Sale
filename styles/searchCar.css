@@ -60,12 +60,13 @@
 }
 .card_container #carList div:hover {
   background-color: var(--secondary);
+  color: var(--black);
   transition: all 250ms;
   cursor: pointer;
 }
 .card_container #carList div img {
   width: 100%;
-  height: auto;
+  height: 170px;
   border-radius: 18px 0 0 0;
 }
 .card_container #carList div h3,
@@ -76,9 +77,37 @@ p {
   font-size: 13px;
 }
 
-#noCarMessage {
-  font-size: 60px;
-  font-weight: bold;
+.card_container a {
   color: var(--primary);
-  text-align: center;
+  text-decoration: none;
+}
+
+/* Car Details */
+
+.car_details_container {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.car_details_container h2 {
+  color: var(--primary);
+  font-size: 40px;
+}
+.car_details_container .car_details {
+  border: 2px solid var(--primary);
+  padding: 20px;
+  border-radius: 20px 0 20px 0;
+  min-width: 300px;
+}
+.car_details_container .car_details p {
+  display: flex;
+  justify-content: space-between;
+}
+hr {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  border-radius: 10px;
+  opacity: 0.2;
 }

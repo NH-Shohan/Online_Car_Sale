@@ -19,19 +19,19 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html">
+      <a href="index.php">
         <div class="logo">
           <img src="./assets/logo.png" alt="Logo" />
         </div>
       </a>
 
       <ul class="nav_list">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="addCar.html">Add Car</a></li>
-        <li><a href="searchCar.html">Search Car</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="aboutUs.php">About Us</a></li>
+        <li><a href="addCar.php">Add Car</a></li>
+        <li><a href="searchCar.php">Search Car</a></li>
+        <li><a href="registration.php">Registration</a></li>
+        <li><a href="login.php">Login</a></li>
       </ul>
     </nav>
 
