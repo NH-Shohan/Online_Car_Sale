@@ -1,5 +1,4 @@
 // Dynamic content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 const formInputs = document.querySelectorAll("input");
 
 formInputs.forEach((input) => {
